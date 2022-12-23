@@ -7,6 +7,7 @@ import {
 	CardFooter,
 	CardHeader,
 	IconButton,
+	Link,
 } from "@chakra-ui/react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -27,49 +28,70 @@ export const Footer = () => {
 				align="center"
 				fontSize="2.5rem"
 			>
-				<CardHeader fontSize="2.5rem">
+				<CardHeader>
 					<ButtonGroup>
-						<IconButton
-							colorScheme="black"
-							variant="ghost"
-							size="lg"
-							m={3}
-							icon={<FacebookIcon />}
-						/>
-						<IconButton
-							colorScheme="black"
-							variant="ghost"
-							size="lg"
-							m={3}
-							aria-label="Search database"
-							icon={<GitHubIcon />}
-						/>
-						<IconButton
-							colorScheme="black"
-							variant="ghost"
-							size="lg"
-							m={3}
-							aria-label="Search database"
-							icon={<LinkedInIcon />}
-						/>
-						<IconButton
-							colorScheme="black"
-							variant="ghost"
-							size="lg"
-							m={3}
-							aria-label="Search database"
-							icon={<TwitterIcon />}
-						/>
+						<Link href="https://facebook.com/">
+							<IconButton
+								colorScheme="black"
+								variant="ghost"
+								m={5}
+								size="lg"
+								w="2rem"
+								h="1.5rem"
+								icon={<FacebookIcon />}
+							/>
+						</Link>
+
+						<Link href="https://github.com/Chrisnatalx">
+							<IconButton
+								colorScheme="black"
+								variant="ghost"
+								size="lg"
+								w="2rem"
+								h="1.5rem"
+								m={5}
+								aria-label="Search database"
+								icon={<GitHubIcon />}
+							/>
+						</Link>
+
+						<Link href="https://www.linkedin.com/in/christian-natale-4b54581b8/">
+							<IconButton
+								colorScheme="black"
+								variant="ghost"
+								size="lg"
+								w="2rem"
+								h="1.5rem"
+								m={5}
+								aria-label="Search database"
+								icon={<LinkedInIcon />}
+							/>
+						</Link>
+
+						<Link href="https://twitter.com/home">
+							<IconButton
+								colorScheme="black"
+								variant="ghost"
+								w="2rem"
+								h="1.5rem"
+								size="lg"
+								m={5}
+								aria-label="Search database"
+								icon={<TwitterIcon />}
+							/>
+						</Link>
 					</ButtonGroup>
 				</CardHeader>
 
 				<CardBody>
 					<ButtonGroup bg="#EEEEEE ">
-						<Button bg="#EEEEEE " variant="ghost">
-							Deploy in
-							<TriangleUpIcon m={1} />
-							Vercel
-						</Button>
+						<Link href="https://vercel.com">
+							<Button bg="#EEEEEE " variant="ghost">
+								Deploy in
+								<TriangleUpIcon m={1} />
+								Vercel
+							</Button>
+						</Link>
 					</ButtonGroup>
 				</CardBody>
 				<CardFooter> © 2022 Copyright: ChakraUi </CardFooter>

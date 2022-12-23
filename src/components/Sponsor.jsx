@@ -5,7 +5,7 @@ export const Sponsor = () => {
 	return (
 		<>
 			<Box>
-				<Card w="100%" direction="row" m={3} justifyContent="space-evenly">
+				<Card w="100%" direction="row" mb={3} justifyContent="space-evenly">
 					<Image
 						boxSize="100px"
 						src="https://puppis.vteximg.com.br/arquivos/ids/163027/Pro%20Plan%20150x150.png?v=636613090406530000"

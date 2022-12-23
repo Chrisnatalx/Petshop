@@ -1,3 +1,4 @@
+import { Link as RouterLink } from "react-router-dom";
 import { Search2Icon } from "@chakra-ui/icons";
 import {
 	Button,
@@ -8,26 +9,28 @@ import {
 	Flex,
 	Spacer,
 	Box,
+	Link,
 } from "@chakra-ui/react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import React from "react";
-
+//
 export const Navbar = () => {
 	return (
-		<Box bg="#FEFAF4 " fontFamily="Montserrat">
+		<Box bg="#FEFAF4" fontFamily="Montserrat">
 			<Flex minWidth="max-content" alignItems="center" gap="2">
 				<Menu>
 					<ButtonGroup>
-						<Button colorScheme="purple" variant="link" m={3}>
-							Inicio
-						</Button>
-						<Button colorScheme="purple" variant="link" m={3}>
-							Productos
-						</Button>
-						<Button colorScheme="purple" variant="link" m={3}>
-							Registrarse
-						</Button>
+						<Link as={RouterLink} to="/">
+							<Button colorScheme="purple" variant="link" m={3}>
+								Inicio
+							</Button>
+						</Link>
+						<Link as={RouterLink} to="/products">
+							<Button colorScheme="purple" variant="link" m={3}>
+								Productos
+							</Button>
+						</Link>
 					</ButtonGroup>
 					<Spacer />
 					<ButtonGroup>

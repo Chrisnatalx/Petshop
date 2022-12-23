@@ -1,5 +1,4 @@
 import React from "react";
-import { CardProducts } from "../components/CardProducts";
 import { Footer } from "../components/Footer";
 import { Sponsor } from "../components/Sponsor";
 import { Navbar } from "../components/Navbar";

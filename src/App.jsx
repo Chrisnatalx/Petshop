@@ -1,9 +1,7 @@
 import React from "react";
-//import { Login } from "./pages/Login";
-import { Shop } from "./pages/Shop";
+
+import { AppRouter } from "./router/AppRouter";
 
 export const App = () => {
-	return <Shop />;
-
-	//<Login></Login>;
+	return <AppRouter />;
 };

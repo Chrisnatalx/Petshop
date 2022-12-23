@@ -18,7 +18,7 @@ export const SideBar = () => {
 				w="100%"
 				h="400px"
 				src="https://storage.googleapis.com/kaggle-competitions/kaggle/17678/logos/header.png?t=2019-11-28-18-44-28"
-				alt="Caffe Latte"
+				alt="Perritos y gatos"
 			/>
 		</>
 	);
