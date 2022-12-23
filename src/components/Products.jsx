@@ -1,4 +1,4 @@
-import { Center, Grid, GridItem } from "@chakra-ui/react";
+import { Center, Container, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
 import { getProducts } from "../services/getProducts";
 import { CardProducts } from "./CardProducts";
@@ -8,15 +8,18 @@ export const Products = () => {
 	return (
 		<>
 			<Center>
-				<Grid templateColumns="repeat(4,1fr)">
-					{productos.map((producto) => (
-						<Grid key={producto.id}>
-							<GridItem>
+				<Container maxW="container.xl">
+					<Grid
+						templateColumns="repeat(auto-fit,minmax(350px,1fr))"
+						justifyItems="center"
+					>
+						{productos.map((producto) => (
+							<GridItem key={producto.id}>
 								<CardProducts {...producto}></CardProducts>
 							</GridItem>
-						</Grid>
-					))}
-				</Grid>
+						))}
+					</Grid>
+				</Container>
 			</Center>
 		</>
 	);

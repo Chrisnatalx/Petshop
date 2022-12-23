@@ -4,6 +4,7 @@ import {
 	Card,
 	CardBody,
 	CardFooter,
+	Center,
 	Divider,
 	Heading,
 	Image,
@@ -24,12 +25,14 @@ export const CardProducts = ({ titulo, descripcion, url, precio }) => {
 	return (
 		<Card maxW="xs" m={5} fontFamily="Montserrat" h="475px">
 			<CardBody>
-				<Image
-					maxH={{ base: "100%", sm: "200px" }}
-					maxW={{ base: "100%", sm: "200px" }}
-					src={url}
-					alt={titulo}
-				/>
+				<Center>
+					<Image
+						maxH={{ base: "100%", sm: "200px" }}
+						maxW={{ base: "100%", sm: "200px" }}
+						src={url}
+						alt={titulo}
+					/>
+				</Center>
 				<Stack mt="6" spacing="3">
 					<Heading size="md">{titulo}</Heading>
 					<Text>{descripcion}</Text>
