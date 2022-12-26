@@ -9,11 +9,8 @@ import {
 	IconButton,
 	Link,
 } from "@chakra-ui/react";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import { TriangleUpIcon } from "@chakra-ui/icons";
+import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
 	return (
@@ -38,7 +35,7 @@ export const Footer = () => {
 								size="lg"
 								w="2rem"
 								h="1.5rem"
-								icon={<FacebookIcon />}
+								icon={<FaFacebook />}
 							/>
 						</Link>
 
@@ -51,7 +48,7 @@ export const Footer = () => {
 								h="1.5rem"
 								m={5}
 								aria-label="Search database"
-								icon={<GitHubIcon />}
+								icon={<FaGithub />}
 							/>
 						</Link>
 
@@ -64,7 +61,7 @@ export const Footer = () => {
 								h="1.5rem"
 								m={5}
 								aria-label="Search database"
-								icon={<LinkedInIcon />}
+								icon={<FaLinkedin />}
 							/>
 						</Link>
 
@@ -77,7 +74,7 @@ export const Footer = () => {
 								size="lg"
 								m={5}
 								aria-label="Search database"
-								icon={<TwitterIcon />}
+								icon={<FaTwitter />}
 							/>
 						</Link>
 					</ButtonGroup>

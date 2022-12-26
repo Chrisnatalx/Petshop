@@ -1,5 +1,5 @@
-import { Box, Card, Center, Image, Stack } from "@chakra-ui/react";
 import React from "react";
+import { Box, Card, Image } from "@chakra-ui/react";
 
 export const Sponsor = () => {
 	return (
