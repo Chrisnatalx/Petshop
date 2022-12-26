@@ -11,10 +11,13 @@ import {
 	Stack,
 	Text,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ProductsContext } from "../context/ProductsContext";
 
-export const CardProducts = ({ titulo, descripcion, url, precio }) => {
+export const CardProducts = ({ titulo, descripcion, url, precio, id }) => {
 	const [counter, setCounter] = useState(0);
+
+	const { products, setproducts } = useContext(ProductsContext);
 
 	const increment = () => {
 		setCounter(counter + 1);
@@ -22,6 +25,7 @@ export const CardProducts = ({ titulo, descripcion, url, precio }) => {
 	const decrement = () => {
 		setCounter(counter - 1);
 	};
+
 	return (
 		<Card maxW="xs" m={5} fontFamily="Montserrat" h="475px">
 			<CardBody>
@@ -51,7 +55,21 @@ export const CardProducts = ({ titulo, descripcion, url, precio }) => {
 					<Button variant="outline" colorScheme="purple" onClick={increment}>
 						+
 					</Button>
-					<Button variant="solid" colorScheme="purple">
+					<Button
+						variant="solid"
+						colorScheme="purple"
+						onClick={() =>
+							setproducts(...products, {
+								// sin products.push agrega solamente 1 al carrito
+								url,
+								titulo,
+								descripcion,
+								precio,
+								cant: counter,
+								id,
+							})
+						}
+					>
 						Agregar al carrito
 					</Button>
 				</ButtonGroup>

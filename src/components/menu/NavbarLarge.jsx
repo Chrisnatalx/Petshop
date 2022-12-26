@@ -38,19 +38,6 @@ export const NavbarLarge = () => {
 						</ButtonGroup>
 
 						<ButtonGroup>
-							<Input
-								focusBorderColor="purple.500"
-								m={3}
-								variant="flushed"
-								placeholder="Que estas buscando?"
-							/>
-							<IconButton
-								colorScheme="purple"
-								variant="ghost"
-								m={3}
-								aria-label="Search database"
-								icon={<Search2Icon />}
-							/>
 							<Link as={RouterLink} to="/Cart">
 								<IconButton
 									colorScheme="purple"

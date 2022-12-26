@@ -1,16 +1,21 @@
+import React, { useContext } from "react";
 import {
 	Box,
+	Button,
 	Card,
 	CardBody,
 	CardHeader,
 	Heading,
+	Image,
 	Stack,
 	StackDivider,
 	Text,
 } from "@chakra-ui/react";
-import React from "react";
+import { ProductsContext } from "../context/ProductsContext";
 
 export const Cart = () => {
+	const { products } = useContext(ProductsContext);
+	console.log(products);
 	return (
 		<>
 			<Card>
@@ -22,28 +27,22 @@ export const Cart = () => {
 					<Stack divider={<StackDivider />} spacing="4">
 						<Box>
 							<Heading size="xs" textTransform="uppercase">
-								Summary
+								{products.titulo}
 							</Heading>
 							<Text pt="2" fontSize="sm">
-								View a summary of all your clients over the last month.
+								${products.precio}
 							</Text>
+							<Image
+								maxH={{ base: "100%", sm: "100px" }}
+								maxW={{ base: "100%", sm: "100px" }}
+								src={products.url}
+								alt={products.titulo}
+							/>
+							<Text> Cantidad : {products.cant}</Text>
 						</Box>
-						<Box>
-							<Heading size="xs" textTransform="uppercase">
-								Overview
-							</Heading>
-							<Text pt="2" fontSize="sm">
-								Check out the overview of your clients.
-							</Text>
-						</Box>
-						<Box>
-							<Heading size="xs" textTransform="uppercase">
-								Analysis
-							</Heading>
-							<Text pt="2" fontSize="sm">
-								See a detailed analysis of all your business clients.
-							</Text>
-						</Box>
+						<Button colorScheme="purple" variant="solid" m={3}>
+							Finalizar
+						</Button>
 					</Stack>
 				</CardBody>
 			</Card>
