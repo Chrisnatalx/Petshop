@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ProductsContext } from "../../context/ProductsContext";
 import Swal from "sweetalert2";
-import { Button, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Badge, Button, Grid, GridItem } from "@chakra-ui/react";
 
 export const CartEnd = () => {
 	const { clearCart, products } = useContext(ProductsContext);
@@ -23,11 +23,11 @@ export const CartEnd = () => {
 	return (
 		<Grid
 			fontFamily="Montserrat"
-			templateColumns="repeat(auto-fit,minmax(300px,1fr))"
+			templateColumns="repeat(auto-fit,minmax(200px,1fr))"
 			justifyItems="center"
 		>
-			<GridItem mt={4}>
-				<Text>Total a pagar : ${total}</Text>
+			<GridItem>
+				<Badge colorScheme="purple">Total a pagar : ${total}</Badge>
 			</GridItem>
 			<GridItem>
 				<Button

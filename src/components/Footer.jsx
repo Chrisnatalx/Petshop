@@ -6,6 +6,7 @@ import {
 	CardBody,
 	CardFooter,
 	CardHeader,
+	Center,
 	IconButton,
 	Link,
 } from "@chakra-ui/react";
@@ -25,13 +26,13 @@ export const Footer = () => {
 				align="center"
 				fontSize="2.5rem"
 			>
-				<CardHeader>
+				<CardHeader p={0}>
 					<ButtonGroup>
 						<Link href="https://facebook.com/">
 							<IconButton
 								colorScheme="black"
 								variant="ghost"
-								m={5}
+								m={4}
 								size="lg"
 								w="2rem"
 								h="1.5rem"
@@ -46,7 +47,7 @@ export const Footer = () => {
 								size="lg"
 								w="2rem"
 								h="1.5rem"
-								m={5}
+								m={4}
 								aria-label="Search database"
 								icon={<FaGithub />}
 							/>
@@ -59,7 +60,7 @@ export const Footer = () => {
 								size="lg"
 								w="2rem"
 								h="1.5rem"
-								m={5}
+								m={4}
 								aria-label="Search database"
 								icon={<FaLinkedin />}
 							/>
@@ -72,7 +73,7 @@ export const Footer = () => {
 								w="2rem"
 								h="1.5rem"
 								size="lg"
-								m={5}
+								m={4}
 								aria-label="Search database"
 								icon={<FaTwitter />}
 							/>
@@ -91,7 +92,7 @@ export const Footer = () => {
 						</Link>
 					</ButtonGroup>
 				</CardBody>
-				<CardFooter> © 2022 Copyright: ChakraUi </CardFooter>
+				<CardFooter>© 2022 Copyright: ChakraUi</CardFooter>
 			</Card>
 		</>
 	);

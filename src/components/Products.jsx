@@ -10,7 +10,7 @@ export const Products = () => {
 			<Center>
 				<Container maxW="container.xl">
 					<Grid
-						templateColumns="repeat(auto-fit,minmax(350px,1fr))"
+						templateColumns="repeat(auto-fit,minmax(330px,1fr))"
 						justifyItems="center"
 					>
 						{productos.map((producto) => (

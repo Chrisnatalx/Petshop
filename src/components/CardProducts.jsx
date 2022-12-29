@@ -31,12 +31,12 @@ export const CardProducts = (producto) => {
 	};
 
 	return (
-		<Card maxW="xs" m={5} fontFamily="Montserrat" h="475px">
+		<Card maxW="sm" m={5} fontFamily="Montserrat" h="475px">
 			<CardBody>
 				<Center>
 					<Image
-						maxH={{ base: "100%", sm: "200px" }}
-						maxW={{ base: "100%", sm: "200px" }}
+						maxH={{ base: "150px", sm: "200px" }}
+						maxW={{ base: "150px", sm: "200px" }}
 						src={url}
 						alt={titulo}
 					/>
@@ -53,14 +53,29 @@ export const CardProducts = (producto) => {
 
 			<CardFooter>
 				<ButtonGroup spacing="2">
-					<Button variant="outline" colorScheme="purple" onClick={decrement}>
+					<Button
+						variant="outline"
+						colorScheme="purple"
+						onClick={decrement}
+						size="sm"
+					>
 						-
 					</Button>
 					<Text py={2}>{counter}</Text>
-					<Button variant="outline" colorScheme="purple" onClick={increment}>
+					<Button
+						variant="outline"
+						colorScheme="purple"
+						onClick={increment}
+						size="sm"
+					>
 						+
 					</Button>
-					<Button variant="solid" colorScheme="purple" onClick={onAddCart}>
+					<Button
+						variant="solid"
+						colorScheme="purple"
+						onClick={onAddCart}
+						size="sm"
+					>
 						Agregar al carrito
 					</Button>
 				</ButtonGroup>
