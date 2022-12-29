@@ -92,7 +92,6 @@ export const Footer = () => {
 						</Link>
 					</ButtonGroup>
 				</CardBody>
-				<CardFooter>© 2022 Copyright: ChakraUi</CardFooter>
 			</Card>
 		</>
 	);
