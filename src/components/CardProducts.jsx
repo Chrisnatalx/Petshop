@@ -24,7 +24,10 @@ export const CardProducts = (producto) => {
 		setCounter(counter + 1);
 	};
 	const decrement = () => {
-		setCounter(counter - 1);
+		counter > 0 ? setCounter(counter - 1) : setCounter(counter);
+	};
+	const onAddCart = () => {
+		if (counter > 0) addProducts(producto, counter);
 	};
 
 	return (
@@ -47,6 +50,7 @@ export const CardProducts = (producto) => {
 				</Stack>
 			</CardBody>
 			<Divider />
+
 			<CardFooter>
 				<ButtonGroup spacing="2">
 					<Button variant="outline" colorScheme="purple" onClick={decrement}>
@@ -56,11 +60,7 @@ export const CardProducts = (producto) => {
 					<Button variant="outline" colorScheme="purple" onClick={increment}>
 						+
 					</Button>
-					<Button
-						variant="solid"
-						colorScheme="purple"
-						onClick={() => addProducts(producto, counter)}
-					>
+					<Button variant="solid" colorScheme="purple" onClick={onAddCart}>
 						Agregar al carrito
 					</Button>
 				</ButtonGroup>
