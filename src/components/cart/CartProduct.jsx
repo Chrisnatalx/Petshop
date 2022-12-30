@@ -25,7 +25,7 @@ export const CartProduct = ({ titulo, id, precio, quantity, url }) => {
 								{titulo}
 							</Heading>
 							<Text pt="2" fontSize="sm">
-								${precio * quantity}
+								${precio}
 							</Text>
 							<Image
 								maxH={{ base: "100%", sm: "100px" }}
