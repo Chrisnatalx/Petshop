@@ -55,6 +55,7 @@ export const NavbarLarge = () => {
 									to="/Cart"
 									colorScheme="purple"
 									variant="ghost"
+									style={{ textDecoration: "none" }}
 								>
 									<Button
 										colorScheme="purple"
