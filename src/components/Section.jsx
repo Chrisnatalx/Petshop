@@ -5,10 +5,10 @@ import { SectionLarge } from "./section/SectionLarge";
 import { SectionResponsive } from "./section/SectionResponsive";
 
 export const Section = () => {
-	const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+	const [isLargerThan550] = useMediaQuery("(min-width: 550px)");
 
 	useEffect(() => {
-		if (!isLargerThan900) return;
-	}, [isLargerThan900]);
-	return <>{isLargerThan900 ? <SectionLarge /> : <SectionResponsive />}</>;
+		if (!isLargerThan550) return;
+	}, [isLargerThan550]);
+	return <>{isLargerThan550 ? <SectionLarge /> : <SectionResponsive />}</>;
 };

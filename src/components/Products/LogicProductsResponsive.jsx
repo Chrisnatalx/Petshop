@@ -1,14 +1,11 @@
 import React from "react";
-
-import { CardProducts } from "./CardProducts";
+import { CardProducts } from "../CardProducts";
 import { Center, Container, Grid, GridItem } from "@chakra-ui/react";
-import { getProducts } from "../services/getProducts";
 
-export const Products = () => {
-	const productos = getProducts.getSix();
+export const LogicProductsResponsive = ({ productos }) => {
 	return (
 		<>
-			<Center>
+			<Center pt="16px">
 				<Container maxW="container.xl">
 					<Grid
 						templateColumns="repeat(auto-fit,minmax(330px,1fr))"

@@ -3,8 +3,8 @@ import { Box, Card, Image } from "@chakra-ui/react";
 
 export const SponsorLarge = () => {
 	return (
-		<Box my={12}>
-			<Card w="100%" direction="row" mb={3} justifyContent="space-evenly">
+		<Box mt={1}>
+			<Card w="100%" direction="row" justifyContent="space-evenly">
 				<Image
 					boxSize="100px"
 					src="https://puppis.vteximg.com.br/arquivos/ids/163027/Pro%20Plan%20150x150.png?v=636613090406530000"

@@ -15,7 +15,13 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 export const NavbarResponsive = () => {
 	return (
 		<>
-			<Box bg="#FEFAF4" fontFamily="Montserrat">
+			<Box
+				bg="#FEFAF4"
+				fontFamily="Montserrat"
+				position="fixed"
+				zIndex="1001"
+				w="100%"
+			>
 				<Flex
 					minWidth="max-content"
 					alignItems="center"

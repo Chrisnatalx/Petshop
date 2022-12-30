@@ -6,6 +6,7 @@ export const productos = [
 		descripcion: "Sobrecitos para perros",
 		tipo: "Perro",
 		precio: 200,
+		venta: "Moderada",
 	},
 	{
 		id: "2",
@@ -14,6 +15,7 @@ export const productos = [
 		descripcion: "Royal canin 20kg",
 		tipo: "Perro",
 		precio: 12000,
+		venta: "Moderada",
 	},
 	{
 		id: "3",
@@ -22,6 +24,7 @@ export const productos = [
 		descripcion: "Dogchow cachorro 20kg",
 		tipo: "Perro",
 		precio: 8000,
+		venta: "Moderada",
 	},
 	{
 		id: "4",
@@ -30,6 +33,7 @@ export const productos = [
 		descripcion: "Purina excellent 20kg adulto",
 		tipo: "Perro",
 		precio: 12000,
+		venta: "Moderada",
 	},
 	{
 		id: "5",
@@ -38,6 +42,7 @@ export const productos = [
 		descripcion: "Eukanuba 15kg",
 		tipo: "Perro",
 		precio: 10000,
+		venta: "Alta",
 	},
 	{
 		id: "6",
@@ -46,6 +51,7 @@ export const productos = [
 		descripcion: "Purina excellent 1kg",
 		tipo: "Gato",
 		precio: 1000,
+		venta: "Moderada",
 	},
 	{
 		id: "7",
@@ -54,6 +60,7 @@ export const productos = [
 		descripcion: "Royal Canin Exigent 7.5kg",
 		tipo: "Gato",
 		precio: 16000,
+		venta: "Moderada",
 	},
 	{
 		id: "8",
@@ -62,6 +69,7 @@ export const productos = [
 		descripcion: "Whiskas 500gr",
 		tipo: "Gato",
 		precio: 800,
+		venta: "Moderada",
 	},
 	{
 		id: "9",
@@ -70,6 +78,7 @@ export const productos = [
 		descripcion: "Vital Canal  7.5kg",
 		tipo: "Gato",
 		precio: 15000,
+		venta: "Alta",
 	},
 	{
 		id: "10",
@@ -78,6 +87,7 @@ export const productos = [
 		descripcion: "Transportadora ",
 		tipo: "Gato",
 		precio: 4000,
+		venta: "Moderada",
 	},
 	{
 		id: "11",
@@ -86,13 +96,15 @@ export const productos = [
 		titulo: "Piedritas Absorsol",
 		tipo: "Gato",
 		precio: 500,
+		venta: "Alta",
 	},
 	{
 		id: "12",
 		url: "https://http2.mlstatic.com/D_NQ_NP_778852-MLA44100937688_112020-O.webp",
 		descripcion: "Soga para perros",
 		titulo: "Soga para perros",
-		tipo: "Perro",
+		tipo: "Lo Mas vendido",
 		precio: 1000,
+		venta: "Moderada",
 	},
 ];

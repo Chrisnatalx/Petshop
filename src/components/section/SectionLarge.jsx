@@ -1,34 +1,36 @@
 import React from "react";
-import { Avatar, AvatarGroup, Center } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import { Avatar, ButtonGroup, Center, Link } from "@chakra-ui/react";
 
 export const SectionLarge = () => {
 	return (
 		<>
-			<Center mb={3}>
-				<AvatarGroup spacing="4rem">
-					<Avatar
-						size="2xl"
-						name="Perros"
-						src="https://www.petdarling.com/wp-content/uploads/2014/08/cachorro-beagle-200x200.jpg"
-					/>
+			<Center m={3}>
+				<ButtonGroup spacing="4rem">
+					<Link as={RouterLink} to="/ProductsDogs">
+						<Avatar
+							size="2xl"
+							name="Perros"
+							src="https://www.petdarling.com/wp-content/uploads/2014/08/cachorro-beagle-200x200.jpg"
+						/>
+					</Link>
 
-					<Avatar
-						size="2xl"
-						name="Gatos"
-						src="https://www.fundacion-affinity.org/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg"
-					/>
+					<Link as={RouterLink} to="/ProductsCats">
+						<Avatar
+							size="2xl"
+							name="Gatos"
+							src="https://www.fundacion-affinity.org/sites/default/files/el-gato-necesita-tener-acceso-al-exterior.jpg"
+						/>
+					</Link>
 
-					<Avatar
-						size="2xl"
-						name="Juguetes"
-						src="https://i.pinimg.com/236x/c0/64/92/c064921cd398b29c073353a7b0427af3--toy-boxes-cardboard-box.jpg"
-					/>
-					<Avatar
-						size="2xl"
-						name="Sanitarios"
-						src="https://veterinariaaguara.com/wp-content/uploads/2022/04/Como-utilizar-las-piedras-para-gatos.webp"
-					/>
-				</AvatarGroup>
+					<Link as={RouterLink} to="/Products">
+						<Avatar
+							size="2xl"
+							name="Juguetes"
+							src="https://images.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg?tx=w_680"
+						/>
+					</Link>
+				</ButtonGroup>
 			</Center>
 		</>
 	);

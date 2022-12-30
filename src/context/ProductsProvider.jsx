@@ -12,9 +12,9 @@ export const ProductsProvider = ({ children }) => {
 	});
 
 	const addProducts = (item, newQuantity) => {
+		const { quantity = 0 } = products.find((prod) => prod.id === item.id) || {};
 		const newProduct = products.filter((prod) => prod.id !== item.id);
-		newProduct.push({ ...item, quantity: newQuantity });
-		setproducts(newProduct);
+		setproducts([...newProduct, { ...item, quantity: quantity + newQuantity }]);
 	};
 
 	const clearCart = () => {

@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
+import { Link as RouterLink } from "react-router-dom";
 import { ProductsContext } from "../../context/ProductsContext";
 import Swal from "sweetalert2";
-import { Badge, Button, Grid, GridItem } from "@chakra-ui/react";
+import { Badge, Button, Grid, GridItem, Link } from "@chakra-ui/react";
 
 export const CartEnd = () => {
 	const { clearCart, products } = useContext(ProductsContext);
@@ -30,6 +31,17 @@ export const CartEnd = () => {
 				<Badge colorScheme="purple">Total a pagar : ${total}</Badge>
 			</GridItem>
 			<GridItem>
+				<Link as={RouterLink} to="/Products" style={{ textDecoration: "none" }}>
+					<Button
+						width="170px"
+						colorScheme="purple"
+						variant="solid"
+						m={3}
+						fontFamily="Montserrat"
+					>
+						Seguir Comprando
+					</Button>
+				</Link>
 				<Button
 					width="170px"
 					colorScheme="purple"
@@ -40,6 +52,7 @@ export const CartEnd = () => {
 				>
 					Vaciar carrito
 				</Button>
+
 				<Button
 					width="170px"
 					colorScheme="purple"

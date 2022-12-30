@@ -1,14 +1,13 @@
 import React from "react";
-
-import { CardProducts } from "./CardProducts";
 import { Center, Container, Grid, GridItem } from "@chakra-ui/react";
 import { getProducts } from "../services/getProducts";
+import { CardProducts } from "./CardProducts";
 
-export const Products = () => {
-	const productos = getProducts.getSix();
+export const MoreSales = () => {
+	const productos = getProducts.getByVenta("Alta");
 	return (
 		<>
-			<Center>
+			<Center pt="50px">
 				<Container maxW="container.xl">
 					<Grid
 						templateColumns="repeat(auto-fit,minmax(330px,1fr))"

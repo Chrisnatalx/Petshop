@@ -8,7 +8,11 @@ export const Cart = () => {
 	const { products } = useContext(ProductsContext);
 
 	return (
-		<Grid fontFamily="Montserrat" gridTemplateColumns="repeat(2, 1fr)">
+		<Grid
+			pt="50px"
+			fontFamily="Montserrat"
+			gridTemplateColumns="repeat(2, 1fr)"
+		>
 			<Grid gridTemplateColumns="repeat(1, 1fr)">
 				{products.map((product) => (
 					<GridItem key={product.id}>

@@ -1,14 +1,15 @@
 import React from "react";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
-import { AllProducts } from "../components/Products/AllProducts";
+
+import { ProductsCat } from "../components/Products/ProductsCat";
 import { Sponsor } from "../components/Sponsor";
 
-export const ProductsViews = () => {
+export const CatsView = () => {
 	return (
 		<>
 			<Navbar />
-			<AllProducts />
+			<ProductsCat />
 			<Sponsor />
 			<Footer />
 		</>

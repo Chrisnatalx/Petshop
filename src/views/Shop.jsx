@@ -11,9 +11,9 @@ export const Shop = () => {
 		<>
 			<Navbar />
 			<SideBar />
-			<Sponsor />
 			<Section />
 			<Products />
+			<Sponsor />
 			<Footer />
 		</>
 	);
