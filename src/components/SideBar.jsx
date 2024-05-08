@@ -16,7 +16,7 @@ export const SideBar = () => {
 						objectFit="cover"
 						w="100%"
 						h="400px"
-						src="https://st4.depositphotos.com/1606449/20290/i/1600/depositphotos_202902672-stock-photo-cute-dogs-cats-together-hanging.jpg"
+						src="https://s1.1zoom.me/b5050/855/405025-svetik_1920x1080.jpg"
 						alt="Perritos y gatos"
 					/>
 				</Box>
@@ -26,7 +26,7 @@ export const SideBar = () => {
 						objectFit="cover"
 						w="100%"
 						h="150px"
-						src="https://st4.depositphotos.com/1606449/20290/i/1600/depositphotos_202902672-stock-photo-cute-dogs-cats-together-hanging.jpg"
+						src="https://s1.1zoom.me/b5050/855/405025-svetik_1920x1080.jpg"
 						alt="Perritos y gatos"
 					/>
 				</Box>
